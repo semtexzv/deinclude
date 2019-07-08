@@ -1,0 +1,24 @@
+[package]
+name = "deinclude"
+version = "0.1.0"
+authors = ["Michal Hornický <semtexzv@gmail.com>"]
+edition = "2018"
+description = "Simple tool to process Includes from C/C++ files"
+documentation = "https://docs.rs/deinclude"
+repository = "https://github.com/semtexzv/deinclude"
+homepage = "https://github.com/semtexzv/deinclude"
+license = "MIT/Apache-2.0"
+keywords = ["cli", "c"]
+categories = ["tools"]
+
+[lib]
+name = "deinclude"
+path ="src/lib.rs"
+
+[[bin]]
+name = "deinclude"
+path = "src/main.rs"
+
+[dependencies]
+regex = "1.1.9"
+clap =  "2.33.0"
